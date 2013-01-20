@@ -1,0 +1,151 @@
+/*============== map ==============*/
+#googleMap {
+	margin:0 0 60px 0;
+	padding:4px;
+	background:#fff;
+	border:1px solid #e0e0e0;
+}
+#googleMap iframe {
+	width:100%;
+	display: block;
+}
+
+/*==== blocked info ====*/
+div.blocked_info {
+	margin:0 0 60px 0;
+	background-color: #fff;
+	border:1px solid #e0e0e0;
+}
+div.blocked_info div {
+	border-bottom:1px solid #e0e0e0;
+	padding:6px 12px;
+}
+div.blocked_info div:last-child {
+	border:none;
+}
+
+
+/*==================================
+	contact_form style
+===================================*/
+#contact_form form div.five input, #contact_form form div.six textarea {
+	width:95%;
+	padding:10px 6px;
+	border:1px solid #ddd;
+	margin:0 0 6px 0;
+	font-size:13px;
+	/* inner shadow */
+	-webkit-box-shadow: inset 0 1px 0 #f0f0f0;
+	-moz-box-shadow: inset 0 1px 0 #f0f0f0; 
+	-o-box-shadow: inset 0 1px 0 #f0f0f0; 
+	box-shadow: inset 0 1px 0 #f0f0f0; 
+}
+#contact_form form div.six textarea {
+	width:96%;
+	height:148px;
+	margin:0;
+}
+#contact_form div.submitForm {
+	clear:both;
+}
+#contact_form div.submitForm p {
+	float:left;
+	margin-top:12px;
+}
+#contact_form div.submitForm input {
+	float:right;
+}
+
+
+/*==================================
+	contact_info style
+===================================*/
+#contact_info ul {
+	background:#fff;
+	border:1px solid #e0e0e0;
+}
+#contact_info ul li {
+	padding:8px 12px;
+	margin:0 0 0 0;
+	border-bottom:1px solid #e0e0e0;
+}
+#contact_info ul li:last-child {
+	margin:0;
+}
+#contact_info ul li h6 {
+	margin:0;
+	padding-left:35px;
+	line-height: 22px;
+}
+#contact_info ul li p {
+	padding-left:35px;
+	color:#777;
+}
+
+/* backgrounds */
+#contact_info ul li.contact_address h6 {
+	background:url('../images/icons/address.png') no-repeat left 5px;
+}
+#contact_info ul li.contact_email h6 {
+	background:url('../images/icons/email_us.png') no-repeat left 5px;
+}
+#contact_info ul li.contact_phone h6 {
+	background:url('../images/icons/phone.png') no-repeat left 5px;
+}
+#contact_info ul li.contact_fax h6 {
+	background:url('../images/icons/fax.png') no-repeat left 5px;
+}
+
+
+/*====== tagLine style =======*/
+#tagLine {
+	margin:60px 0 0 0;
+	background:#f9f9f9;
+	border-bottom:1px solid #e9e9e9;
+	border-left:2px solid #e81962;
+}
+#tagLine h5 {
+	padding:18px 12px;
+	font-size:16px;
+	margin:0;
+}
+#tagLine h5 span {
+	font-weight:400;
+}
+#tagLine h5 small {
+	font-size:12px;
+	font-weight:400;
+	text-transform: none;
+	color:#777;
+}
+#tagLine a.red_btn {
+	margin:18px 12px;
+	display: inline-block;
+}
+/*===== end it ========*/
+
+
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#contact_info {
+		margin-top:60px;
+	}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	#contact_info {
+		margin-top:60px;
+	}
+}
