@@ -1,0 +1,21 @@
+
+#search input[type="text"] {
+    background: url(../img/search-dark.png) no-repeat left center;
+    border: 0 none;
+    font: bold 12px Arial,Helvetica,Sans-serif;
+	color: #6a6f75;
+    width:150px;
+    padding: 6px 15px 6px 35px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); 
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    }
+
+#search input[type="text"]:focus {
+    background: url(../img/search-dark.png) no-repeat right center;
+	color:#333;
+    width: 200px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    }

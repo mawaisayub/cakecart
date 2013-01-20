@@ -1,0 +1,290 @@
+table.cart_table {
+	width:100%;
+	background:#fff;
+	margin:0;
+	padding:0;
+	border-collapse: collapse;
+}
+table.cart_table thead tr th,
+table.cart_table tbody tr td {
+	padding:12px;
+	border:1px dotted #aaa;
+	text-align:center;
+	vertical-align: middle;
+	margin:0;
+}
+table.cart_table tbody tr:hover {
+	background-color:#f9f9f9;
+}
+
+table.cart_table thead tr th.first_td,
+table.cart_table tbody tr td.first_td {
+	text-align:left;
+}
+
+/* th */
+table.cart_table thead tr th h4 {
+	font-weight:600;
+	padding-top:3px;
+	padding-bottom:3px;
+	margin:0;
+	text-transform: uppercase;
+}
+
+/*========= dt.first_td ==========*/
+table.cart_table tbody tr td.first_td div img {
+	border:1px solid #dedede;
+	float:left;
+	margin:0 5px;
+	/* box shadow */
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,.1);
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,.1);
+	-o-box-shadow: 0 0 5px rgba(0,0,0,.1);
+	box-shadow: 0 0 5px rgba(0,0,0,.1);
+}
+table.cart_table tbody tr td.first_td div span {
+	line-height:20px;
+	margin:0;
+	padding:0;
+	float:left;
+}
+table.cart_table tbody tr td.first_td div span strong {
+	font-size: 14px;
+}
+/* ul stars */
+table.cart_table tbody tr td.first_td div span ul li {
+	display: inline-block;
+	margin:0;
+	padding:0;
+}
+table.cart_table tbody tr td.first_td div span ul li a {
+	display: inline-block;
+	width:12px;
+	height:11px;
+	margin:0px;
+	text-indent: -999999px;
+	padding:0;
+    color: #FF0000;
+	background:url('../img/small_start.png') no-repeat left top;
+}
+table.cart_table tbody tr td.first_td div span ul li a:hover {
+	background-position: left bottom;
+}
+
+/*====== total_price ========*/
+table.cart_table tbody tr td.total_price h5 {
+	font-size:20px;
+	font-weight: 600;
+	color:#e81962;
+	line-height:20px;
+}
+table.cart_table tbody tr td.total_price h5 span {
+	color:#999;
+	font-size:12px;
+}
+/*===== end it ======*/
+
+
+/*============== td Quantity =========*/
+table.cart_table tbody tr td.quantity form {
+	width:100%;
+	margin:0 auto 5px;
+}
+table.cart_table tbody tr td.quantity form label {
+	padding:1px;
+	background:#f5f5f5;
+	margin:0 0;
+}
+table.cart_table tbody tr td.quantity form label input[type=text]{
+	padding:0 3px;
+	height:28px;
+	line-height:28px;
+	font-size:12px;
+	margin:0;
+	color:#444;
+	font-weight:600;
+	text-align: center;
+	/*display: inline-block;*/
+	background:#fff;
+	border:1px solid #ddd;
+	/* inner shadow */
+	-webkit-box-shadow: inset 0 1px 0 #f0f0f0;
+	box-shadow: inset 0 1px 0 #f0f0f0; 
+}
+table.cart_table tbody tr td.quantity form label input.gray_btn {
+	padding: 0 12px;
+	height:30px;
+	margin:0;
+	line-height:30px;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+}
+/* span */
+table.cart_table tbody tr td.quantity span {
+	font-size: 12px;
+}
+/*======== end it =======*/
+
+
+/*============= td delete item & add item ============*/
+table.cart_table tbody tr td a.delete_item {
+	text-indent: -999999px;
+	/*font:0/0 a;*/
+	width:34px;
+	height:34px;
+	display: block;
+	margin:3px auto;
+	background:url('../img/delete_icon.png') no-repeat 50% 50%;
+}
+table.cart_table tbody tr td a.delete_item:hover {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+	opacity: .7;
+}
+
+table.cart_table tbody tr td a.add_item {
+	width:34px;
+	height:34px;
+	display: block;
+	margin:3px auto;
+	font:0/0 a;
+	background:#e0e0e0 url('../img/cart_icon.png') no-repeat 50% 50%;
+	border:1px solid #ccc;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+table.cart_table tbody tr td a.add_item:hover {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+	opacity: .7;
+}
+/*======= end it ==========*/
+
+
+
+
+
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	table.cart_table thead tr th, table.cart_table tbody tr td {
+		padding:10px 6px;
+	}
+	
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	table.cart_table thead {
+		display: none;
+	}
+	table.cart_table thead tr {
+		margin-bottom:12px;
+		display: block;
+	}
+	table.cart_table thead tr th, table.cart_table tbody tr td {
+		padding:12px 0;
+		display: block;
+		width:100%;
+		float:none;
+		clear:both;
+	}
+	table.cart_table tbody tr td.first_td {
+		width:100%;
+		display: block;
+		float:none;
+	}
+	table.cart_table tbody tr td.first_td:before {
+		content:"Product Item";
+		display: block;
+		padding:12px 0;
+		margin:0 0 12px 0;
+		border:none;
+		text-align:center;
+		background:#444;
+		color:#fff;
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+	table.cart_table tbody tr td.first_td div {
+		width: 100%;
+		display: block;
+		float:none;
+		clear:both;
+		text-align: center;
+	}
+
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	
+	table.cart_table thead {
+		display: none;
+	}
+	table.cart_table thead tr {
+		margin-bottom:12px;
+		display: block;
+	}
+	table.cart_table thead tr th, table.cart_table tbody tr td {
+		padding:12px 0;
+		display: block;
+		width:100%;
+		float:none;
+		clear:both;
+	}
+	table.cart_table tbody tr td.first_td {
+		width:100%;
+		display: block;
+		float:none;
+	}
+	table.cart_table tbody tr td.first_td:before {
+		content:"Product Item";
+		display: block;
+		padding:12px 0;
+		margin:0 0 12px 0;
+		border:none;
+		text-align:center;
+		background:#444;
+		color:#fff;
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+	table.cart_table tbody tr td.first_td div {
+		width: 100%;
+		display: block;
+		float:none;
+		clear:both;
+		margin:0 auto;
+		text-align: center;
+	}
+	table.cart_table tbody tr td.first_td div img {
+		display: block;
+		margin:0 auto 12px;
+		float:none;
+	}
+	table.cart_table tbody tr td.first_td div span {
+		display: block;
+		margin:0 auto;
+		float:none;
+	}
+
+}
+.pro{
+    width:100px;
+    height: 100px;
+}
