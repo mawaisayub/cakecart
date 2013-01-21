@@ -125,36 +125,17 @@ echo $this->Html->css('about');
 							<li>
                                 <?php echo $this->Html->link(h('Home'),array('controller'=>'products','action'=>'index'),array('class'=>'laptops'));?>
 							</li>
-                            <li><?php echo $this->Html->link(h('Categories'),array('controller'=>'categories','action'=>'index'),array('class'=>'hasdropmenu'));?>
+                            <?php foreach($allcategories as $category){?>
+                            <li><?php echo $this->Html->link(h($category['Category']['title']),array('controller'=>'categories','action'=>'index',$category['Category']['id']),array('class'=>'hasdropmenu'));?>
+                           <?php if(sizeof($category['Subcategory'])>0) {?>
                             <ul class="submenu">
-                            <?php
-                            foreach($allcategories as $category)
-                            {
-                               ?>
-                                <li>
-                                    <?php echo $this->Html->link($category['Category']['title'],array('controller'=>'categories','action'=>'index'),array('class'=>'submenu'));
-
-                               ?>
-                                <ul class="submenu" id="subsubmenu" style="display: none">
-                                    <?php
-                                    foreach($category['Subcategory'] as $sub)
-                                {?>
-                                    <li>
-                                        <?php echo $this->Html->link($sub['title'],array('controller'=>'subcategories','action'=>'index'));?>
-                                    </li>
-
-
-
-                              <?php  }?>
-
-                                </ul>
-
-
-
-                                </li>
-
-                                <?php    }?>
+                                <?php foreach($category['Subcategory'] as $sub){?>
+                                <li><?php echo $this->Html->link($sub['title'],array('controller'=>'subcategories','action'=>'index',$sub['id']),array('class'=>'laptops'));?></li>
+                                    <?php }?>
                             </ul>
+                                <?php }?>
+                                <?php }?></li>
+                                </ul>
                             </li>
 
 
