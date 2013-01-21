@@ -43,50 +43,6 @@ class ProductsController extends AppController {
    public function cart(){
 
    }
-/**
- * add method
- *
- * @return void
- */
-	public function add() {
-		if ($this->request->is('post')) {
-			$this->Product->create();
-			if ($this->Product->save($this->request->data)) {
-				$this->Session->setFlash(__('The product has been saved'));
-				$this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The product could not be saved. Please, try again.'));
-			}
-		}
-		$subcategories = $this->Product->Subcategory->find('list');
-		$this->set(compact('subcategories'));
-	}
-
-/**
- * edit method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
-	public function edit($id = null) {
-		$this->Product->id = $id;
-		if (!$this->Product->exists()) {
-			throw new NotFoundException(__('Invalid product'));
-		}
-		if ($this->request->is('post') || $this->request->is('put')) {
-			if ($this->Product->save($this->request->data)) {
-				$this->Session->setFlash(__('The product has been saved'));
-				$this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The product could not be saved. Please, try again.'));
-			}
-		} else {
-			$this->request->data = $this->Product->read(null, $id);
-		}
-		$subcategories = $this->Product->Subcategory->find('list');
-		$this->set(compact('subcategories'));
-	}
 
 /**
  * delete method
