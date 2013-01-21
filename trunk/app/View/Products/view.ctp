@@ -62,11 +62,20 @@
 <div class="actions">
 	<h2><?php echo __('Actions'); ?></h2>
 	<ul>
+<?php if($authrized){?>
 		<li><?php echo $this->Html->link(__('Edit Product'), array('action' => 'admin_edit', $product['Product']['id']),array('class'=>'red_btn')); ?> </li>
 		<li><?php echo $this->Form->postLink(__('Delete Product'), array('action' => 'delete', $product['Product']['id']),array('class'=>'red_btn'), __('Are you sure you want to delete # %s?', $product['Product']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Products'), array('action' => 'index'),array('class'=>'red_btn')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Product'), array('action' => 'add'),array('class'=>'red_btn')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Subcategories'), array('controller' => 'subcategories', 'action' => 'index'),array('class'=>'red_btn')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Subcategory'), array('controller' => 'subcategories', 'action' => 'add'),array('class'=>'red_btn')); ?> </li>
+<?php }?>
+<li><?php echo $this->Html->link('Add to Wishlist', array('controller'=>'carts','action'=>'add',$product['Product']['id'],true), array(
+                            'class'=>'link'));
+                            ?>
+                           </li>
+<li> <?php echo $this->Html->link(h('_Add to Cart_'), array('controller'=>'carts','action'=>'add',$product['Product']['id'],false), array(
+                            'class'=>'cart'));
+                            ?></li>
 	</ul>
 </div>
