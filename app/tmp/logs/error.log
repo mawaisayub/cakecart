@@ -6653,3 +6653,18 @@
 2013-01-21 14:05:06 Error: [MissingControllerException] Controller class ExclusivePaper.pngController could not be found.
 #0 C:\xampp\htdocs\shop\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-01-21 14:48:00 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\shop\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-21 14:48:01 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\xampp\htdocs\shop\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-21 14:48:01 Error: [MissingControllerException] Controller class ExclusivePaper.pngController could not be found.
+#0 C:\xampp\htdocs\shop\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-21 14:48:06 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\shop\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-21 14:48:06 Error: [MissingControllerException] Controller class ExclusivePaper.pngController could not be found.
+#0 C:\xampp\htdocs\shop\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
