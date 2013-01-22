@@ -85,7 +85,7 @@ echo $this->Html->css('about');
 						<li><?php echo $this->Html->link(h('Wish List'),array('controller' => 'carts', 'action' => 'index',true));?></a></li>
 						<li><?php echo $this->Html->link(h('My Account'),array('controller' => 'users', 'action' => 'acount'));?></li>
 						<li><?php echo $this->Html->link(h('Shopping cart'),array('controller' => 'carts', 'action' => 'index',false));?></li>
-                        <li><?php echo $this->Html->link(h('Checkout'),array('controller' => 'products', 'action' => 'checkout'));?></a></li>
+                        <li><?php echo $this->Html->link(h('Checkout'),array('controller' => 'orders', 'action' => 'checkout'));?></a></li>
                         <?php
                         if(isset($logined))
                             if($logined){ ?>
