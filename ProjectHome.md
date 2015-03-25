@@ -1,0 +1,1 @@
+Online Shopping portal made in CakePHP with all basic functionality and a few advanced features.
